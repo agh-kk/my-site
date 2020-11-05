@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>aghkk</title>
+<
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">  <!-- Google web font "Open Sans" -->
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  
+  <link rel="stylesheet" href="css/demo.css" />
+  <link rel="stylesheet" href="css/style.css">
+  
+  <script type="text/javascript" src="js/modernizr.custom.86080.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>		
+	</head>
+
+	<body>
+			<div id="particles-js"></div>
+		
+			<ul class="cb-slideshow">
+	            <li></li>
+	            <li></li>
+	            <li></li>
+	            <li></li>
+	            <li></li>
+	            <li></li>
+	        </ul>
+				
+			<div class="container-fluid">
+				<div class="row cb-slideshow-text-container ">
+					<div class= "tm-content col-xl-6 col-sm-8 col-xs-8 ml-auto section">
+					<header class="mb-5"><h1 class="intro">I AM </h1> <h1>ANUGRAH</h1></header>
+					<h2>Owen a new website.......<h2>
+					
+                    <form id="submit-form" action="" class="subscribe-form">
+               	    	<div class="row form-section">
+
+							<div class="col-md-12 col-sm-12 col-xs-12 col-12">
+
+
+
+								<input type="text" class="form-control" class="name" id="contact_email" name="Name" placeholder="Enter your name....">
+								
+								<input type="tel" class="form-control" class="phone" id="contact_email" name="Mobile No" placeholder="Enter your mobile no...." pattern="[5-9]{1}[0-9]{9}" required>
+
+							
+
+								 
+								
+				  			</div>
+							<div class="col-md-5 col-sm-5 col-xs-5">
+								<button type="submit" class="tm-btn-subscribe">Submit</button>
+							</div>
+						
+						</div>
+                    </form>
+                    <!--
+					<div class="tm-social-icons-container text-xs-center">
+	                    <a href="#" class="tm-social-link"><i class="fa fa-facebook"></i></a>
+	                    <a href="#" class="tm-social-link"><i class="fa fa-google-plus"></i></a>
+	                    <a href="#" class="tm-social-link"><i class="fa fa-twitter"></i></a>
+	                    <a href="#" class="tm-social-link"><i class="fa fa-linkedin"></i></a>
+	                </div>
+					-->
+					</div>
+				</div>
+				<div class="footer-link">
+					<p>Developed by: Anugrah kk</p>
+				</div>
+			</div>
+			
+			 <!-- SCRIPT FOR FORM SUBMIT RESULT-->
+
+			 <script>
+				$("#submit-form").submit((e)=>{
+					e.preventDefault()
+					$.ajax({
+						url:"https://script.google.com/macros/s/AKfycbw70t0k5rCDJimrAzhB3RauFJ2n9dN9ZnQIVUKezmEHYHqNABvN/exec",
+						data:$("#submit-form").serialize(),
+						method:"post",
+						success:function (response){
+							alert("Form submitted successfully")
+							window.location.reload()
+							//window.location.href="https://google.com"
+						},
+						error:function (err){
+							alert("Something Error")
+			
+						}
+					})
+				})
+			</script>
+
+	</body>
+
+	<script type="text/javascript" src="js/particles.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+</html>
